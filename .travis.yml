@@ -8,3 +8,6 @@ script:
  - RAILS_ENV=test bundle exec rake db:migrate --trace
  - bundle exec rake db:test:prepare
  - bundle exec rspec -fd spec/
+
+env:
+ - APIKEY = "98fa57bc4f27b3d4346827ae6544072e"
