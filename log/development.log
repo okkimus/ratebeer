@@ -782,3 +782,1552 @@ Processing by UsersController#show as HTML
   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
 Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/places" for ::1 at 2016-02-20 12:21:30 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 43ms (Views: 41.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 12:22:11 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dFSqSeKHNq2mz7G3YZsEP2I0VkJ1JsCFTyCXFHufi89x9a1IX1IjyZhdAeXDurN7zkovqBRmOu5xf5gMZqPRmQ==", "city"=>"", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 41ms (Views: 39.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 12:30:37 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dFSqSeKHNq2mz7G3YZsEP2I0VkJ1JsCFTyCXFHufi89x9a1IX1IjyZhdAeXDurN7zkovqBRmOu5xf5gMZqPRmQ==", "city"=>"", "commit"=>"Search"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant PlacesController::HTTParty):
+  app/controllers/places_controller.rb:11:in `search'
+
+
+  Rendered /home/mime/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /home/mime/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/mime/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/mime/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.9ms)
+  Rendered /home/mime/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/mime/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/mime/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/mime/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/mime/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.7ms)
+  Rendered /home/mime/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/mime/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/mime/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (46.0ms)
+
+
+Started GET "/places" for ::1 at 2016-02-20 12:30:39 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 36ms (Views: 34.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 12:30:43 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fDeZqFB20Z9QoAIlJk7jQONqKdEAe4wwhj64CXnuqhl5lp6p7aPE+24ysneEb1QETxRQO2E7dlu4YbcRZNLwTw==", "city"=>"helsinki", "commit"=>"Search"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant PlacesController::HTTParty):
+  app/controllers/places_controller.rb:11:in `search'
+
+
+  Rendered /home/mime/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /home/mime/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/mime/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/mime/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.2ms)
+  Rendered /home/mime/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/mime/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/mime/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/mime/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/mime/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (22.5ms)
+  Rendered /home/mime/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/mime/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/mime/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (44.8ms)
+
+
+Started GET "/" for ::1 at 2016-02-20 12:31:06 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BreweriesController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "breweries"
+  [1m[36mBrewery Load (0.2ms)[0m  [1mSELECT "breweries".* FROM "breweries"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered breweries/index.html.erb within layouts/application (29.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 295ms (Views: 274.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/places" for ::1 at 2016-02-20 12:31:10 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (11.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 71ms (Views: 69.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 12:31:15 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qYGEYLqnsnG7LHtP3zo7MtE9X77fjELZGbhZj/r+QqisIINhB3KnFYW+yx19G4x2fUMmVL7MuLIn51aX58IY/g==", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (1.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 422ms (Views: 48.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 12:32:26 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RDRQANfCU/6Eavhvy3Lnowa9OAsWRTOXC2NLY7AjvchBlVcBahdGmrr4SD1pU1DnqsNB4XcFyfw1PER7rR/nng==", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 471ms (Views: 41.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 12:35:33 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RDRQANfCU/6Eavhvy3Lnowa9OAsWRTOXC2NLY7AjvchBlVcBahdGmrr4SD1pU1DnqsNB4XcFyfw1PER7rR/nng==", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 439ms (Views: 45.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/beer_clubs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 12:35:34 +0200
+
+
+Started GET "/assets/breweries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 12:35:34 +0200
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 12:35:34 +0200
+
+
+Started GET "/assets/memberships.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 12:35:34 +0200
+
+
+Started GET "/assets/scaffolds.self-8fd090a375d21f2ea640bc63c6f9b30d98061c3893ae36d3738838bf589fb6f4.css?body=1" for ::1 at 2016-02-20 12:35:34 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 12:35:34 +0200
+
+
+Started GET "/assets/application.self-4d837320c19656889a1d05de8a920d56ddc7cadd5c5bab30ff5b4e0666d3d966.css?body=1" for ::1 at 2016-02-20 12:35:34 +0200
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-20 12:35:34 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-20 12:35:34 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-20 12:35:34 +0200
+
+
+Started GET "/assets/beer_clubs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 12:35:34 +0200
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 12:35:34 +0200
+
+
+Started GET "/assets/breweries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 12:35:34 +0200
+
+
+Started GET "/assets/memberships.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 12:35:34 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 12:35:34 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-20 12:35:34 +0200
+
+
+Started POST "/places" for ::1 at 2016-02-20 12:35:38 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G/Qzdi3HS7DiI3fvHAn2aH+j703AwV46iPrQyi5Cl20eVTR3kBJe1Nyxx72+KEEs092Wp6GBpFG2pd/SM37NOw==", "city"=>"espoo", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 402ms (Views: 33.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 12:35:43 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NHbotainOTZ6Y8TlYmH2m/lBayKQ8328CmohX46YloUx1++0FXIsUkTxdLfAQEHfVT8SyPGzh9c0NS5Hk6TM0w==", "city"=>"inari", "commit"=>"Search"}
+Redirected to http://localhost:3000/places
+Completed 302 Found in 406ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places" for ::1 at 2016-02-20 12:35:43 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 12:35:46 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bBUiwBXZx5ZHVwTr4Pvg8Ywuyudh2dVmrJvNG8cR+NFptCXBqAzS8nnFtLlC2le1IFCzDQCZLw2SxMID2i2ihw==", "city"=>"kerava", "commit"=>"Search"}
+Redirected to http://localhost:3000/places
+Completed 302 Found in 450ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places" for ::1 at 2016-02-20 12:35:47 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places" for ::1 at 2016-02-20 12:36:59 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 42ms (Views: 40.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/beer_clubs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 12:37:00 +0200
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 12:37:00 +0200
+
+
+Started GET "/assets/memberships.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 12:37:00 +0200
+
+
+Started GET "/assets/breweries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 12:37:00 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 12:37:00 +0200
+
+
+Started GET "/assets/scaffolds.self-8fd090a375d21f2ea640bc63c6f9b30d98061c3893ae36d3738838bf589fb6f4.css?body=1" for ::1 at 2016-02-20 12:37:00 +0200
+
+
+Started GET "/assets/application.self-4d837320c19656889a1d05de8a920d56ddc7cadd5c5bab30ff5b4e0666d3d966.css?body=1" for ::1 at 2016-02-20 12:37:00 +0200
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-20 12:37:00 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-20 12:37:00 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-20 12:37:00 +0200
+
+
+Started GET "/assets/beer_clubs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 12:37:00 +0200
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 12:37:00 +0200
+
+
+Started GET "/assets/breweries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 12:37:00 +0200
+
+
+Started GET "/assets/memberships.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 12:37:00 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 12:37:00 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-20 12:37:00 +0200
+
+
+Started GET "/places" for ::1 at 2016-02-20 12:37:11 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/beer_clubs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 12:37:11 +0200
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 12:37:11 +0200
+
+
+Started GET "/assets/breweries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 12:37:11 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 12:37:11 +0200
+
+
+Started GET "/assets/scaffolds.self-8fd090a375d21f2ea640bc63c6f9b30d98061c3893ae36d3738838bf589fb6f4.css?body=1" for ::1 at 2016-02-20 12:37:11 +0200
+
+
+Started GET "/assets/memberships.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 12:37:11 +0200
+
+
+Started GET "/assets/application.self-4d837320c19656889a1d05de8a920d56ddc7cadd5c5bab30ff5b4e0666d3d966.css?body=1" for ::1 at 2016-02-20 12:37:11 +0200
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-20 12:37:11 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-20 12:37:11 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-20 12:37:11 +0200
+
+
+Started GET "/assets/beer_clubs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 12:37:11 +0200
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 12:37:11 +0200
+
+
+Started GET "/assets/breweries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 12:37:11 +0200
+
+
+Started GET "/assets/memberships.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 12:37:11 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-20 12:37:11 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 12:37:11 +0200
+
+
+Started POST "/places" for ::1 at 2016-02-20 12:37:14 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nPbVjKgTtBcNKmODtB9El96NAQQPZGsBPUvjL87YOUmZV9KNFcahczO409EWPvPTcvN47m4kkWoDFOw30+RjHw==", "city"=>"kerava", "commit"=>"Search"}
+Redirected to http://localhost:3000/places
+Completed 302 Found in 5476ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 12:37:20 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nPbVjKgTtBcNKmODtB9El96NAQQPZGsBPUvjL87YOUmZV9KNFcahczO409EWPvPTcvN47m4kkWoDFOw30+RjHw==", "city"=>"kerava", "commit"=>"Search"}
+Redirected to http://localhost:3000/places
+Completed 302 Found in 405ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places" for ::1 at 2016-02-20 12:37:20 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 12:38:25 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PpqLLfo4cQSm1O5wzeZTth8agBvopds/WhlCV4+mx947O4wsR+1kYJhGXiJvx+Tys2T58YnlIVRkRk1PkpqdiA==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1542ms (Views: 42.0ms | ActiveRecord: 0.9ms)
+  [1m[36m (15.9ms)[0m  [1mCREATE TABLE "beer_clubs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "city" varchar, "founded" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (15.6ms)[0m  CREATE TABLE "beers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "style" varchar, "brewery_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (13.1ms)[0m  [1mCREATE TABLE "breweries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "year" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (6.1ms)[0m  CREATE TABLE "memberships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "beer_club_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (5.2ms)[0m  [1mCREATE TABLE "ratings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "score" integer, "beer_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "user_id" integer) [0m
+  [1m[35m (4.1ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "password_digest" varchar) 
+  [1m[36m (4.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (15.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (15.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160129174824')[0m
+  [1m[35m (15.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160121171547')
+  [1m[36m (15.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160115170543')[0m
+  [1m[35m (6.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160129154951')
+  [1m[36m (4.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160129171231')[0m
+  [1m[35m (4.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160115155254')
+  [1m[36m (4.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160129174351')[0m
+  [1m[35m (11.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160129162130')
+
+
+Started GET "/breweries" for ::1 at 2016-02-20 12:47:18 +0200
+Processing by BreweriesController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "breweries"
+  [1m[36mBrewery Load (0.2ms)[0m  [1mSELECT "breweries".* FROM "breweries"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered breweries/index.html.erb within layouts/application (8.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 41ms (Views: 36.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/places" for ::1 at 2016-02-20 12:47:19 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places" for ::1 at 2016-02-20 12:52:54 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (2.5ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 325ms (Views: 308.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/beer_clubs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 12:52:55 +0200
+
+
+Started GET "/assets/breweries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 12:52:55 +0200
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 12:52:55 +0200
+
+
+Started GET "/assets/memberships.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 12:52:55 +0200
+
+
+Started GET "/assets/scaffolds.self-8fd090a375d21f2ea640bc63c6f9b30d98061c3893ae36d3738838bf589fb6f4.css?body=1" for ::1 at 2016-02-20 12:52:55 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 12:52:55 +0200
+
+
+Started GET "/assets/application.self-4d837320c19656889a1d05de8a920d56ddc7cadd5c5bab30ff5b4e0666d3d966.css?body=1" for ::1 at 2016-02-20 12:52:55 +0200
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-20 12:52:55 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-20 12:52:55 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-20 12:52:55 +0200
+
+
+Started GET "/assets/beer_clubs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 12:52:55 +0200
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 12:52:55 +0200
+
+
+Started GET "/assets/breweries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 12:52:55 +0200
+
+
+Started GET "/assets/memberships.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 12:52:55 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 12:52:55 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-20 12:52:55 +0200
+
+
+Started POST "/places" for ::1 at 2016-02-20 12:52:59 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mwWj2KQ4s3Q5H2gt6OfDHW37SiBu7rvr+4L5xEIIeRmepKTZGe2mEAeN2H9KxnRZwYUzyg+uQYDF3fbcXzQjTw==", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 687ms (Views: 32.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places" for ::1 at 2016-02-20 13:50:06 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 25ms (Views: 24.5ms | ActiveRecord: 0.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'Aino' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["username", "Aino"], ["password_digest", "$2a$10$JZNXPFY4Es38Zde1paCqC.5ePBiTuCLvIwa1DWq486IkPm/0g2eIC"], ["created_at", "2016-02-20 14:13:15.270031"], ["updated_at", "2016-02-20 14:13:15.270031"]]
+  [1m[36m (5.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users"
+
+
+Started GET "/places" for ::1 at 2016-02-20 16:18:06 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 41ms (Views: 38.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/beer_clubs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 16:18:06 +0200
+
+
+Started GET "/assets/beers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 16:18:06 +0200
+
+
+Started GET "/assets/breweries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 16:18:06 +0200
+
+
+Started GET "/assets/scaffolds.self-8fd090a375d21f2ea640bc63c6f9b30d98061c3893ae36d3738838bf589fb6f4.css?body=1" for ::1 at 2016-02-20 16:18:06 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 16:18:06 +0200
+
+
+Started GET "/assets/memberships.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-20 16:18:06 +0200
+
+
+Started GET "/assets/application.self-4d837320c19656889a1d05de8a920d56ddc7cadd5c5bab30ff5b4e0666d3d966.css?body=1" for ::1 at 2016-02-20 16:18:06 +0200
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-20 16:18:06 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-20 16:18:06 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-20 16:18:06 +0200
+
+
+Started GET "/assets/beer_clubs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 16:18:06 +0200
+
+
+Started GET "/assets/beers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 16:18:06 +0200
+
+
+Started GET "/assets/breweries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 16:18:06 +0200
+
+
+Started GET "/assets/memberships.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 16:18:06 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-20 16:18:06 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-20 16:18:06 +0200
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:18:09 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+lteheky1HbhX4/0QdQltu1Xf9vafm6xV/0G4KIQZYX/+lmEVOfBEt/NP6bj9ZLyQSkGMbs+lNppogn4vyw/0w==", "city"=>"Helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 735ms (Views: 34.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:18:29 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UQh1Hw5OddYj3PiJNS/XiBhF7JY05WDStn9xzU2nlrRUqXIes5tgsh1OSNuXDmDMtDuVfFWlmrmIIH7VUJvM4g==", "city"=>"espoo", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 419ms (Views: 26.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:18:33 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cGP+sQfCfBrW/G5+3WRLwiPZ5P0heKo2BhRWUMY1k4p1wvmwuhdpfuhu3ix/RfyGj6edF0A4UF04S1lI2wnJ3A==", "city"=>"espoo", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:02 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qOiz/cY8nuUh2ruK2nT95u9GXSYAJJwW2u/q6Kc/MQitSbT8e+mLgR9IC9h4VUqiQzgkzGFkZn3ksOXwugNrXg==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 2226ms (Views: 938.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:06 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vLIPXp3OwRoY/vdaV4g/sv2DsnBsma+GpwqTc7Ypstm5EwhfIBvUfiZsRwj1qYj2Uf3Lmg3ZVe2ZVZxrqxXojw==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 39ms (Views: 31.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:07 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1Qx0rwU32X+Ib5OoapqGkhq4VC76QtB8xmx2BO0+IaHQrXOuuOLMG7b9I/rIuzHWtsYtxJsCKhf4M3kc8AJ79w==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (5.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 59ms (Views: 44.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:07 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aZufRyeRHACQitPMOGI7+sKsdKrGia4/xtVSF6WN8oNsOphGmkQJZK4YY56aQ4y+btINQKfJVFT4il0PuLGo1Q==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (5.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 43ms (Views: 37.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:08 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mxZ3dkmdPV6qsPXb1xz6hZl+324i2ZmAy5BCFws5vuWet3B39EgoOpQiRYl1PU3BNQCmhEOZY+v1z00PFgXksw==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (4.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 45ms (Views: 39.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:08 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wNwHUMzzscYkQqSQWiZ5oI2xt0iNUsgPnRdSJYqARnHFfQBRcSakohrQFML4B87kIc/OouwSMmSjSF09l7wcJw==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (12.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 57ms (Views: 48.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:35 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cf/igIpZrXd4nHIbe3a5oLrSsDNoUeTAcdrjDzC6vrEMXuWBN4y4E0YOwknZVw7kFqzJ2QkRHqtPhewXLYbk5w==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (6.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 46ms (Views: 39.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:37 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"59Rnzdcr+wiVjeRmU3eSj66GOEM5hsw31ksiGK7oQkPidWDMav7ubKsfVDTxViXLAvhBqVjGNlzoFC0As9QYFQ==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (5.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 47ms (Views: 39.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:37 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IpeoQtjW5xZ+mLQMYixT9/MQMmXJAFiCoiZ/m3h1zsYnNq9DZQPyckAKBF7ADeSzX25Lj6hAoumceXCDZUmUkA==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (6.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 50ms (Views: 41.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:38 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AxreEj69ReAc2PfiMSEM9U47fgVqiozOQ4sJWOtlncsGu9kTg2hQhCJKR7CTALux4kUH7wvKdqV91AZA9lnHnQ==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (4.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 41ms (Views: 34.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:38 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y5vkpQskhnNEc8DG2inOoq9q+Oar//d4zRS4Ix9oYk5mOuOktvGTF3rhcJR4CHnmAxSBDMq/DRPzS7c7AlQ4GA==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (5.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 41ms (Views: 35.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:39 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BqRdGqgsVzXgt89KyStP2D+qu7Y/kWvmlHXhWaAdRXsDBVobFflCUd4lfxhrCvick9TCXF7RkY2qKu5BvSEfLQ==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (4.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 42ms (Views: 35.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:39 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pJLxI9oDTB55CDjGtj6GeAxw5BQ06GmXd0cQcLgs/YWhM/YiZ9ZZekeaiJQUHzE8oA6d/lWok/xJGB9opRCn0w==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 34ms (Views: 29.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:40 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BqSTeZk6m5Ei8dJ62owFjMpzM62wLLjqwjbpv0mXrXgDBZR4JO+O9RxjYih4rbLIZg1KR9FsQoH8aeanVKv3Lg==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 31ms (Views: 26.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:40 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kSTA/u5ueBfbZORKg4GL1e6Yxg0IdR+6Rxe134z6h4+Uhcf/U7ttc+X2VBghoDyRQua/52k15dF5SLrHkcbd2Q==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 33ms (Views: 28.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:41 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mo7PjitwkmVtfcMnBJQIg5udEWtgh6r29bZ6rG3rvwCfL8iPlqWHAVPvc3Wmtb/HN+NogQHHUJ3L6XW0cNflVg==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 33ms (Views: 28.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:41 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0Z7jsTSP42jsELbwuOWdzdrcc9tcr1f7/hm7ILD/k/3UP+SwiVr2DNKCBqIaxCqJdqIKMT3vrZDARrQ4rcPJqw==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 34ms (Views: 29.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:42 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5fgkxSoKjxNoVisynz8onLsVufxGHDgxID8G5v3Jv/jgWSPEl9+ad1bEm2A9Hp/YF2vAFidcwloeYAn+4PXlrg==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 32ms (Views: 27.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:42 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lUY6g1Yke1SmWf4JQjLDIBehtrg15JvWqUk1P/Bez1SQ5z2C6/FuMJjLTlvgE3Rku9/PUlSkYb2XFjon7WKVAg==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 33ms (Views: 27.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:43 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KE0zBRXUxSDxFyLoLhhbsJ68J9OaOLopCngkcOx3Z1st7DQEqAHQRM+FkrqMOez0MsJeOft4QEI0Jyto8Us9DQ==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (4.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 39ms (Views: 34.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:43 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VEcPzIzmv1Q+IhchcxYoXycCc4FNvVBlsuJTw56XURpR5gjNMTOqMACwp3PRN58bi3wKayz9qg6MvVzbg6sLTA==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 33ms (Views: 28.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:53 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gd4pxX/UQz9gmX46ocpl2TrXAL1K10IsyXNiVnf3MrEcfy7EwgFWW14LzmgD69Kdlql5VyuXuEf3LG1Oasto5w==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 30ms (Views: 26.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:54 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c8xbkZFqbc8A46WtffGiaC/oLg9ZF0HuswnT+xbq1rp2bVyQLL94qz5xFf/f0BUsg5ZX5ThXu4WNVtzjC9aM7A==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 32ms (Views: 27.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:54 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ROLffE6kpbCXNkmvlI8XfjihksHknhLCo713cHW3wgpBQ9h983Gw1Kmk+f02rqA6lN/rK4Xe6Kmd4nhoaIuYXA==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 32ms (Views: 28.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:55 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5RSaptLxyhT8xDZo6qaVra/ETLS+AcGtT8VtlkajtRngtZ2nbyTfcMJWhjpIhyLpA7o1Xt9BO8ZxmmKOW5/vTw==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 34ms (Views: 28.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:55 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2dvNmkTTDs4qf2PmL1h5uAUa3vNUO8OYUZV0E5a+gNzcesqb+QYbqhTt07SNec78qWSnGTV7OfNvynsLi4Laig==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (4.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 38ms (Views: 32.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:31:59 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o3Gr955+OifLlBarLT837HqE5KnLydY0Bkmao/vqylim0Kz2I6svQ/UGpvmPHoCo1vqdQ6qJLF84FpW75taQDg==", "city"=>"helsinki", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 434ms (Views: 30.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:32:04 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MDwUJBAyKKQs5Jte1k+6BcbpL7CIbrO2F0mB7MFywLI1nRMlrec9wBJ2Kwx0bg1BapdWWukuSd0pFo703E6a5A==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (5.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 46ms (Views: 39.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/breweries" for ::1 at 2016-02-20 16:32:25 +0200
+Processing by BreweriesController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "breweries"[0m
+  [1m[35mBrewery Load (0.2ms)[0m  SELECT "breweries".* FROM "breweries"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered breweries/index.html.erb within layouts/application (23.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 62ms (Views: 54.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/places" for ::1 at 2016-02-20 16:32:26 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (2.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 33ms (Views: 32.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:32:29 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lCvEBmJOrXC5SOwJZLbMqaJwGzsmqwpy1RWegyLAj0uRisMH35u4FIfaXFvGl3vtDg5i0Ufr8BnrSpGbP/zVHQ==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (5.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 41ms (Views: 31.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:32:34 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A5kxIT9OWSgMFlQqt8al4ieRQWW3YALlawyMlrnHYiEGODYggptMTDKE5HgV5xKmi+84j9Yg+I5VU4OOpPs4dw==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 36ms (Views: 30.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:33:27 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Mwv5m/xNI9BYRXuv6EwlNnq7Lw9wHQWeEvS8UwmOsu42qv6aQZg2tGbXy/1KbZJy1sVW5RFd//Usq7NLFLLouA==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 26ms (Views: 20.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:33:28 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kuWVcNEB9O3NuNSnUAu5DXDJZ8siJ381JOVnHLfbtXGXRJJxbNThifMqZPXyKg5J3LceIUNnhV4aumgEqufvJw==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 25ms (Views: 21.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:33:29 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CfcHa4DqsJwD3RlRNR2UpmZ3hHbRL3LO3Rw9KiyWGRIMVgBqPT+l+D1PqQOXPCPiygn9nLBviKXjQzIyMapDRA==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:33:29 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GHDIwlvLnTeO5OLkBsMU241KAUyRZlAQRUcDzPUpWvUd0c/D5h6IU7B2Urak4qOfITR4pvAmqnt7GAzU6BUAow==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 21ms (Views: 17.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:33:29 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4Lkt3b9z+lAJouumxo+hgx07ikYrnn/x9BTriL3ZlivlGCrcAqbvNDcwW/RkrhbHsUXzrErehZrKS+SQoOXMfQ==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 22ms (Views: 18.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:33:29 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1cza5SB+cI1CJj4cpbQyzDpVcnxiONC3H+GGg674cX/Qbd3knatl6Xy0jk4HlYWIlisLlgN4Ktwhvombs8QrKQ==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 21ms (Views: 17.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/beer_clubs" for ::1 at 2016-02-20 16:33:57 +0200
+Processing by BeerClubsController#index as HTML
+  [1m[36mBeerClub Load (0.3ms)[0m  [1mSELECT "beer_clubs".* FROM "beer_clubs"[0m
+  Rendered beer_clubs/index.html.erb within layouts/application (4.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 31ms (Views: 27.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/places" for ::1 at 2016-02-20 16:33:57 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 28ms (Views: 27.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:34:00 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DffquEHfSN0BI9I3G49RcikySuANQRTBSNXQ8aUEJ1gIVu25/ApduT+xYmW5ruY2hUwzCmwB7qp2it/puDh9Dg==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 24ms (Views: 18.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:34:04 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HbQeBxuf4a+vozr89x8nXX+LoVoPcg3OH4sD9QxLNzQYFRkGpkr0y5Exiq5VPpAZ0/XYsG4y96Uh1AztEXdtYg==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 36ms (Views: 31.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:34:04 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nZcMrc6APeSQOmxFuqP7t2tZI523zHZYhYdcx/8/E5GYNgusc1UogK6o3BcYgkzzxydad9aMjDO72FPf4gNJxw==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (4.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 33ms (Views: 27.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:34:05 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3vJGNLYUhaPMoSmhgelo/IwwG2uOvosWqSAn0HtfrbTbU0E1C8GQx/IzmfMjyN+4IE5ige/+cX2XfyjIZmP34g==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 29ms (Views: 24.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:34:05 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iDoHcVVEA4pGwIuwOgeM3hzZOyfB57snfqxilPeJvuuNmwBw6JEW7nhSO+KYJjuasKdCzaCnQUxA822M6rXkvQ==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 28ms (Views: 23.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:34:05 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tezjyA/4OWn0KWvFbNRYV0FFUkk0b+uoorw0oXqXVQmwTeTJsi0sDcq725fO9e8T7Tsro1UvEcOc4zu5Z6sPXw==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 24ms (Views: 20.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:34:05 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DFJx08Vv73w6JAnqgcw8vfcDy9n2/EBFNN+wYlOv9xAJ83bSeLr6GAS2ubgj7Yv5W32yM5e8ui4KgL96TpOtRg==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:34:05 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tFznVGKrMQZtDL3DdW95gmz9wBMxHNmkuHRJy5D0g8mx/eBV334kYlOeDZHXTs7GwIO5+VBcI8+GK0bTjcjZnw==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 25ms (Views: 21.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:34:06 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8yxYMe2HI6AsHk1nW/v9ckbeUIqH3bcCBBBhMlyJAdn2jV8wUFI2xBKM/TX52ko26qApYOadTWk6T24qQbVbjw==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 28ms (Views: 24.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:34:06 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"930terMTQRiMSMrsnC2XX9RBS8nAPKlYMetRgIZx6dby3Cp7DsZUfLLaer4+DCAbeD8yI6F8UzMPtF6Ym02zgA==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 24ms (Views: 20.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:34:06 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ms0+6HaPWlutynf2E7aUCAffSIhgxYsQfqn36DIPyFk3bDnpy1pPP5NYx6SxlyNMq6ExYgGFcXtA9vjwLzOSDw==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 22ms (Views: 18.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:34:38 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qP1YpoL2StnU/AB/DT3V2kQeIsReQmjcO63+h3+HrlWtXF+nPyNfvepusC2vHGKe6GBbLj8CkrcF8vGfYrv0Aw==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 21ms (Views: 17.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:34:39 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZoZf0I13rSCfU0JVPGiMfb7nQN9IDsiWLaqKEcag8hhjJ1jRMKK4RKHB8geeSTs5Epk5NSlOMv0T9YUJ25yoTg==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 25ms (Views: 20.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:34:54 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RVVXXOdAwdRmBtshVf/KT3NguSULEH1cEwT+1Cv5Y5BA9FBdWpXUsFiUa3P33n0L3x7Az2pQhzctW/HMNsU5xg==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 22ms (Views: 17.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/breweries" for ::1 at 2016-02-20 16:35:08 +0200
+Processing by BreweriesController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "breweries"
+  [1m[36mBrewery Load (0.1ms)[0m  [1mSELECT "breweries".* FROM "breweries"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered breweries/index.html.erb within layouts/application (6.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 246ms (Views: 241.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/places" for ::1 at 2016-02-20 16:35:09 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 28ms (Views: 27.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:35:11 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cdYlAVHuvFpf6veY7/SrRAAkupWFm7Y25sYfk3uOc8h0dyIA7DupPmF4R8pN1RwArFrDf+TbTF3YmRCLZrIpng==", "city"=>"new", "commit"=>"Search"}
+Redirected to http://localhost:3000/places
+Completed 302 Found in 413ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places" for ::1 at 2016-02-20 16:35:12 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:35:16 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1bRAnPib50ta84eOj3M/X26mbqtmVB1qOt7EimNUE7nQFUedRU7yL2RhN9wtUogbwtgXQQcU5wEEgcuSfmhJ7w==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 783ms (Views: 20.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:35:19 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wpepx0s3FBiuEy0wB+eJiQnHyeeqHQ8eI9a1ROHmms7HNq7G9uIBfJCBnWKlxj7NpbmwDctd9XUdibpc/NrAmA==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 26ms (Views: 20.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:41:10 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GMnPzL6EoZUm92wcsYtKZQx/ygZTe7OClRqDIvxpw+IdaMjNA1G08Rhl3E4Tqv0hoAGz7DI7SemrRYw64VWZtA==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 656ms (Views: 31.5ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:41:31 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s2I7tznRCltx7mYp963spMzgklfo9m/LgR1Mhe4MrDu2wzy2hAQfP0981ntVjFvgYJ7rvYm2laC/QkOd8zD2bQ==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 42ms (Views: 35.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:41:32 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z23PZneebR08fw5O8d8VcZImGesx9UFEnpGv3t9B3kBizMhnykt4eQLtvhxT/qI1PlhgAVC1uy+gzqDGwn2EFg==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 41ms (Views: 34.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:41:32 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jGiNvPYQSk/3YQeGEuDbbs3nj0kdLUeivsg2Rc6H7sGJyYq9S8VfK8nzt9SwwWwqYZn2o3xtvcmAlzld07u0lw==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 32ms (Views: 27.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:41:33 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"01Ttvqxh6KLo+XpLFU1DspgYu82jLHOqDsl2XIJfAhbW9eq/EbT9xtZryhm3bPT2NGbCJ8JsicEwlnlEn2NYQA==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 32ms (Views: 26.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:41:33 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tP6ph0HXzt5F94bg4DbaVVCDNCHTO4VkJ1bAx4jtvE2xX66G/ALbuntlNrJCF20R/P1Ny7J7fw8ZCc/fldHmGw==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 34ms (Views: 28.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:41:34 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b1Hy10h8hrrj7nmTzXkrIB4RT/BJkwTS0w8qY0tWSS5q8PXW9amT3t18ycFvWJxksm82GijT/rntUCV7VmoTeA==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 30ms (Views: 25.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:41:34 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N7yYnCSlHSQNyMvDz9PmXScR1Jis8eikPWTuFPieHiIyHZ+dmXAIQDNae5Ft8lEZi2+tcs2xEs8DO+EM5aJEdA==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 33ms (Views: 27.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:41:35 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DILGIxKB0FHOMRaiYWzNTzcJLeRDsrBVdN0xr36rMkMJI8Eir1TFNfCjpvDDTXoLm3dUDiLySj5Kgj63Y5doFQ==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 33ms (Views: 27.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:41:35 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"apF6LlNKoR2ls1DxP3HRWIhif1PuHfcRJOSFKRBHTvNvMH0v7p+0eZsh4KOdUGYcJBwGuY9dDXoau4oxDXsUpQ==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 28ms (Views: 23.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:41:36 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i9+ayWIYK7HJOMZfy9DADBW5H6N2CSH61rJs+i7in/qOfp3I380+1feqdg1p8XdIucdmSRdJ25Ho7WPiM97FrA==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 27ms (Views: 23.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:41:36 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C8VMedNBmFDs2EanN9E6Dm2njTuODn3UT0RN/WgRWxYOZEt4bpSNNNJK9vWV8I1Kwdn00e9Oh79xG0LldS0BQA==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 27ms (Views: 23.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:41:37 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fkda/ONZI7QIm0afhnhvhE2hjS7IxPGO5DyA081Q+UN75l39Xow20DYJ9s0kWdjA4d/0xKmEC+XaY4/L0GyjFQ==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (4.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 46ms (Views: 41.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:41:58 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mS2T58BZgObI0GiPa4qFx9Hxh6gIAEc9F+CQ645CZoacjJTmfYyVgvZC2N3JqzKDfY/+QmlAvVYpv5/zk3480A==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 675ms (Views: 27.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:42:02 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z/IRX8h22z3zgQ8+SDBJnNC9lHyVr3yixyZh7h7joerKUxZedaPOWc0Tv2zqEf7YfMPtlvTvhsn5eW72A9/7vA==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:42:02 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UH1qgSUPfM1mcY0Q6vJUOObSUo0y9r9KH8MjpHn9O6ZV3G2AmNppqVjjPUJI0+N8SqwrZ1O2RSEhnCy8ZMFh8A==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 26ms (Views: 22.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:42:54 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b1DT7hkgLdsunlgyyfFGOkeCsSX3Wh4iRRtuQhyCXZVq8dTvpPU4vxAM6GBr0PF+6/zIz5Ya5El7RGFaAb4Hww==", "city"=>"kerava", "commit"=>"Search"}
+Redirected to http://localhost:3000/places
+Completed 302 Found in 421ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places" for ::1 at 2016-02-20 16:42:54 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 224ms (Views: 223.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:43:01 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QpG2fcxEneEzbiO8osmna2bTwsxGw3LOtPCSBRxTgUdHMLF8cZGIhQ38k+4A6BAvyq27JieDiKWKr50dAW/bEQ==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 673ms (Views: 21.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:43:06 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KvWp4g5ZpgHNCirRODKJiGJGUEnD8zAbz5T9ahSWTzRCtGmNexz/DmmmPnmwX1ijfdgq0ZPNqtRYVzttW4Dag==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 22ms (Views: 18.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:43:06 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LMC3Y5tZE9lr/NLecXP33+uzZ+sNl2mvZOGYwj+E7fApYbBiJowGvVVuYozTUkCbR80eAWzXk8RavpfaIri3pg==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 21ms (Views: 17.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:43:07 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uzmkyf0Xe6rmixFbRTGQeVzkj9e2HX7KT4ONxm50tt++mKPIQMJuztgZoQnnECc98Jr2PdddhKFx3ILec0jsiQ==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 31ms (Views: 19.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:43:07 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CFHz/fdUf9yjPogzxtMOwoFRP01pbdlUNgKWk/h5KUkN8PT8SoFquJ2sOGFk8rmGLS9GpwgtIz8IXZmL5UVzHw==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:43:07 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+51O26ZW4B/X0fU3TZxLEeidoBuQmoAkcLToE3FDRpz+PEnaG4P1e+lDRWXvvfxVROPZ8fHaek9O6+cLbH8cyg==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 22ms (Views: 18.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:43:08 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wtSBpIOnIKUTXdvvjoC30Nme2mP5ldffAHhDVPhwTRDHdYalPnI1wS3Pa70soQCUdeCjiZjVLbQ+J0xM5UwXRg==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (5.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 33ms (Views: 28.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:43:08 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mLGxkGsgxx0kmEnXuS8+dsHFsEE/UHQjvUlgakqzQ7+dELaR1vXSeRoK+YUbDokybbvJq14QjkiDFm9yV48Z6Q==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 29ms (Views: 25.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:43:08 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zaz1/Yf7FfukkBRKu34vl/x1Yt+sKc7f+76H5cRR+8/IDfL8Oi4An5oCpBgZX5jTUAsbNc1pNLTF4Yj92W2hmQ==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 27ms (Views: 21.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:43:09 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oTvTUmVVGoSHtDA6IpjMs//hDf3c6eW3J3ct/9wiGcCkmtRT2IAP4LkmgGiAuXv3U590F72pH9wZKCLnwR5Dlg==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 26ms (Views: 22.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:43:22 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+NiJ2L88Z6e1gEXqLN0Mj0r08fC6Ei2XucJQI3WaHPn9eY7ZAulyw4sS9biO/LvL5oqIGttS1/yHnV87aKZGrw==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 32ms (Views: 26.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:43:25 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b6j809dBbguILYKX9JJezdPsHpBtliK1ObgXIl4toltqCfvSapR7b7a/MsVWs+mJf5JnegzW2N4H5xg6QxH4DQ==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 34ms (Views: 29.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:43:26 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j+tkj/RUiDmUp/5qf9fSzxs1HvzyjuKNLwqGxaOcziuKSmOOSYGdXao1Tjjd9mWLt0tnFpPOGOYRVYndvqCUfQ==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 28ms (Views: 21.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:43:27 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"22MVxUIkcGyG11eoMv791TO0z29wrhC5T3NXl0v7e6LewhLE//FlCLhF5/qQ30qRn8q2hRHu6tJxLFiPVsch9A==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 36ms (Views: 32.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:43:28 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9A5sPQzFIpKisCOxiaBw0xAwkcUPSFgdjU9HbMUGiojxr2s8sRA39pwik+MrgceXvE7oL24IonazEEh02DrQ3g==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 26ms (Views: 21.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:43:28 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"amFnxnGEK8Uq8sV0CgS3PScUIY0v/PW72q90WDSgNbpvwGDHzFE+oRRgdSaoJQB5i2pYZ068D9Dk8HtAKZxv7A==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 22ms (Views: 19.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:43:29 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PvUfmgQuh+XXY/YjNkIi7D0qCmzPX+poHsjf09j54yI7VBibufuSgenxRnGUY5WokVRzhq4fEAMgl9DLxcW5dA==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 21ms (Views: 17.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:43:30 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/VUq6T3j3Xf6q89PQLQzTJeQkG51PWAv8uBE1HAfaC/49C3ogDbIE8Q5fx3ilYQIO+7phBR9mkTMv0vMbSMyeQ==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 23ms (Views: 18.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:43:31 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ojgNEddF0PTYnIpGtF6089EXLgq6ZBs8dEt1J0u+vQKnmQoQapDFkOYOOhQWfwO3fWlX4Nsk4VdKFHo/VoLnVA==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 31ms (Views: 27.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/places" for ::1 at 2016-02-20 16:43:32 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ta3B6AJsGS760S5NeNgW6SQWoGDn52LAsJCPQNBKMttIDMbpv7kMSsRDnh/a+aGtiGjZioanmKuOz4BYzXZojQ==", "city"=>"new york", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 736ms (Views: 20.9ms | ActiveRecord: 0.1ms)
