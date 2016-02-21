@@ -10,4 +10,4 @@ script:
  - bundle exec rspec -fd spec/
 
 env:
- - APIKEY = "98fa57bc4f27b3d4346827ae6544072e"
+ - APIKEY=98fa57bc4f27b3d4346827ae6544072e
