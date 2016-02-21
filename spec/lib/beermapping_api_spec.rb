@@ -45,6 +45,9 @@ describe "BeermappingApi" do
   end
 
   describe "in case of cache hit" do
+    before :each do
+      Rails.cache.clear
+    end
 
     it "When one entry in cache, it is returned" do
       canned_answer = <<-END_OF_STRING

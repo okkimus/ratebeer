@@ -1,0 +1,8 @@
+
+<% @place.each do |pleis| %>
+    <h1><%= pleis.name %></h1>
+    <p><%= pleis.street %></p>
+    <p><%= pleis.zip %> <%= pleis.city %></p>
+    <iframe src="<%= pleis.blogmap %>"></iframe>
+
+<% end %>
